@@ -16,4 +16,4 @@ for i in range(4):
 
 print()
 
-print(total_score/8)
+print(round(total_score/8, 1))
