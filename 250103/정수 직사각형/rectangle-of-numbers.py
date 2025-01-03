@@ -7,4 +7,7 @@ for row in range(n):
         num_arr[row][col] = num
         num += 1
 
-print(num_arr)
+for row in range(n):
+    for col in range(m):
+        print(num_arr[row][col], end=' ')
+    print()
