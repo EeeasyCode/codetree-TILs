@@ -8,11 +8,16 @@ for i in range(m):
     if i % 2 == 0:
         for j in range(n):
             num_arr[j][i] = cnt
+            cnt += 1
     else:
-        for j in range(n-1, 0, -1):
+        for j in range(n-1, -1, -1):
             num_arr[j][i] = cnt
+            cnt += 1
 
-print(num_arr)
+for nums in num_arr:
+    for num in nums:
+        print(num, end=' ')
+    print()
 
     
         
